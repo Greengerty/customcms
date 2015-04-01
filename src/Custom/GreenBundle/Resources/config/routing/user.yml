@@ -1,0 +1,30 @@
+cms_user:
+    path:     /
+    defaults: { _controller: "CustomGreenBundle:User:index" }
+
+cms_user_show:
+    path:     /{id}/show
+    defaults: { _controller: "CustomGreenBundle:User:show" }
+
+cms_user_new:
+    path:     /new
+    defaults: { _controller: "CustomGreenBundle:User:new" }
+
+cms_user_create:
+    path:     /create
+    defaults: { _controller: "CustomGreenBundle:User:create" }
+    requirements: { _method: post }
+
+cms_user_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "CustomGreenBundle:User:edit" }
+
+cms_user_update:
+    path:     /{id}/update
+    defaults: { _controller: "CustomGreenBundle:User:update" }
+    requirements: { _method: post|put }
+
+cms_user_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "CustomGreenBundle:User:delete" }
+    requirements: { _method: post|delete }

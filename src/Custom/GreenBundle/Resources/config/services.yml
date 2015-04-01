@@ -1,0 +1,4 @@
+services:
+#    custom_green.example:
+#        class: Custom\GreenBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

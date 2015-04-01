@@ -1,0 +1,29 @@
+custom_green_cms_page:
+    resource: "@CustomGreenBundle/Resources/config/routing/page.yml"
+    prefix:   /cms/page
+
+custom_green_cms_category:
+    resource: "@CustomGreenBundle/Resources/config/routing/category.yml"
+    prefix:   /cms/category
+
+custom_green_cms_user:
+    resource: "@CustomGreenBundle/Resources/config/routing/user.yml"
+    prefix:   /cms/user
+
+custom_green_homepage:
+    path:     /
+    defaults: { _controller: CustomGreenBundle:Default:index }
+
+custom_green_page_display:
+    path:     /page/{id}
+    defaults: { _controller: CustomGreenBundle:Default:display }
+
+login:
+    path:     /login
+    defaults: { _controller: CustomGreenBundle:Security:login }
+
+login_check:
+    path: /login_check
+
+logout:
+    pattern: /logout

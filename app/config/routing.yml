@@ -1,0 +1,7 @@
+custom_green:
+    resource: "@CustomGreenBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: @AppBundle/Controller/
+    type:     annotation
